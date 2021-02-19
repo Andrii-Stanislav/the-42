@@ -1,0 +1,170 @@
+.product-right {
+    flex-basis: 100%;
+}
+
+.product-title {
+    font-size: 46px;
+    line-height: 1.2;
+    margin: 0 0 35px;
+}
+
+.product-text {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #000;
+    }
+}
+
+.product-name,
+.product-price {
+    margin: 0;
+    padding-bottom: 5px;   
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.product-price {
+    position: relative;
+}
+
+.sale-price {
+    color: #D01917;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 45%;
+        display: block;
+        height: 2px;
+        width: 68px;
+        background-color: #D01917;
+    }
+}
+
+.product-select {
+    display: flex;
+    padding: 18px 0 0 0;
+    margin-bottom: 50px;
+}
+
+.product-select_item {
+
+    &:not(:last-child) {
+            margin-right: 10px;
+    }
+
+    input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    input:checked + label {
+        box-shadow: 0 0 10px $accentColor;
+    }
+
+    label {
+        position: relative;
+        display: inline-block;
+        width: 53px;
+        height: 44px;
+        cursor: pointer;
+    }
+
+    label:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+
+%after {
+    position: absolute;
+    min-width: 100px;
+    bottom: -30px;
+    left: -10px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 150ms linear;
+}
+
+.red-label {
+    &::after {
+        content:'Red Mirror';
+        @extend %after;
+    }
+}
+
+.blue-label {
+    &::after {
+        content:'Blue Mirror';
+        @extend %after;
+    }
+}
+
+.green-label {
+    &::after {
+        content:'Green Mirror';
+        @extend %after;
+    }
+}
+
+.select-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.buttons-container {
+    padding: 10px;
+}
+
+.btn-box-add {
+  background-color: $primaryColor; 
+  margin-bottom: 17px; 
+}
+
+.btn-box-presc {
+  background-color: $accentColor;  
+}
+
+
+%btn {
+    width: 100%;
+    padding: 24px;
+    margin: 0;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.48;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    transform: translate(-10px, -10px);
+    transition: transform 150ms linear;
+
+    &:hover {
+        transform: translate(0, 0);
+    }
+}
+
+.add-btn {
+    @extend %btn;
+    background-color: $accentColor
+}
+
+.presc-btn {
+    @extend %btn;
+    background-color: $primaryColor;
+    color: $accentColor;
+}

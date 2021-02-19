@@ -1,0 +1,17 @@
+.red-img,
+.green-img,
+.blue-img {
+    display: none;
+}
+
+.photos-box.red .red-img {
+    display: block;
+}
+
+.photos-box.green .green-img {
+    display: block;
+}
+
+.photos-box.blue .blue-img {
+    display: block;
+}

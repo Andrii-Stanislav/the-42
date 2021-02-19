@@ -1,0 +1,80 @@
+// E3E2E2
+
+.product-left {
+    margin-right: 20px;
+}
+
+.photos-box {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.photos-variants_box {
+  margin-right: 20px;
+}
+
+.photos-variants_item {
+    height: 166px;
+    width: 203px;
+    border: $border;
+    transition: all 250ms linear;
+    cursor: pointer;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &:hover {
+        border: 2px solid $accentColor;
+    }
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.photos-large_box {
+    height: 539px;
+    width: 539px;
+    border: $border;
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.description-box {
+    display: flex;
+}
+
+.description {
+    width: 147px;
+    height: 149px;
+    padding: 20px 5px;
+
+    text-align: center;
+
+    background-color:$accentColor;
+
+    &:not(:last-child) {
+        margin-right: 42px;
+    }
+
+    &-title {
+        font-weight: 500; 
+        font-size: 18px;
+        line-height: 1.25;
+    }
+
+    &-text {
+        margin: 5px 0 0;
+        font-weight: 400; 
+        font-size: 16px;
+        line-height: 1.4;
+        font-family: 'Roboto', sans-serif;
+    }
+}

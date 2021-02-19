@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The 42 test</title>
+  </head>
+
+  <body>
+    <div class="product-tab">
+      <div class="product-left">
+        <div class="photos-box red" data-color="red" id="photos-box">
+          <div class="photos-variants_box">
+            <div class="photos-variants_item" id="photosItem_1">
+              <img class="red-img" src="./images/red/red-1.png" data-color="red" width="203px" alt="small-photo">
+              <img class="green-img" src="./images/green/green-1.png" data-color="green" width="203px" alt="small-photo">
+              <img class="blue-img" src="./images/blue/blue-1.png" data-color="blue" width="203px" alt="small-photo">
+            </div>
+            <div class="photos-variants_item" id="photosItem_2">
+              <img class="red-img" src="./images/red/red-2.png" data-color="red" width="203px" alt="small-photo">
+              <img class="green-img" src="./images/green/green-2.png" data-color="green" width="203px" alt="small-photo">
+              <img class="blue-img" src="./images/blue/blue-2.png" data-color="blue" width="203px" alt="small-photo">
+            </div>
+            <div class="photos-variants_item" id="photosItem_3">
+              <img class="red-img" src="./images/red/red-3.png" data-color="red" width="203px" alt="small-photo">
+              <img class="green-img" src="./images/green/green-3.png" data-color="green" width="203px" alt="small-photo">
+              <img class="blue-img" src="./images/blue/blue-3.png" data-color="blue" width="203px" alt="small-photo">
+            </div>
+          </div>
+          <div class="photos-large_box">
+            <img src="./images/red/red-2.png" id="img-large" width="536px"alt="large-photo">
+          </div>
+        </div>
+        <div class="description-box">
+          <div class="description">
+            <b class="description-title">INCLUDES</b>
+            <p class="description-text">Hard case protective case with zipper</p>
+          </div>
+          <div class="description">
+            <b class="description-title">30-DAY</b>
+            <p class="description-text">100 percent, no questions asked, money back gurantee</p>
+          </div>
+          <div class="description">
+            <b class="description-title">2-YEAR</b>
+            <p class="description-text">warranty covering frame damage at no charge</p>
+          </div>
+          <div class="description">
+            <b class="description-title">FREE</b>
+            <p class="description-text">shipping & returns on all orders to the US</p>
+          </div>
+        </div>
+      </div>
+      <div class="product-right">
+        <h1 class="product-title">WRAP AROUND</h1> 
+        <form id="select-form" method="post">
+          <div class="product-variant">
+            <div class="product-text">
+              <p class="product-name">POLYCARBONATE</p>
+              <p class="product-price">$30</p>
+            </div>
+            <div class="product-select">
+              <div class="product-select_item">
+                <input type="radio" data-variant="red" data-quantity="30" name="select_item" id="p-red">
+                <label class="red-label" for="p-red">
+                  <img class="select-img" src="./images/select/red-item.png" alt="select-image">
+                </label>
+              </div>
+              <div class="product-select_item">
+                <input type="radio" data-variant="blue" data-quantity="30" name="select_item" id="p-blue">
+                <label class="blue-label" for="p-blue">
+                  <img class="select-img" src="./images/select/blue-item.png" alt="select-image">
+                </label>
+              </div>
+              <div class="product-select_item">
+                <input type="radio" data-variant="green" data-quantity="30" name="select_item" id="p-green">
+                <label class="green-label" for="p-green">
+                  <img class="select-img" src="./images/select/green-item.png" alt="select-image">
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="product-variant">
+            <div class="product-text">
+              <p class="product-name">POLYCARBONATE POLARIZED</p>
+              <p class="product-price">$50.00 <span class="sale-price">$30.00</span></p>
+            </div>
+            <div class="product-select">
+              <div class="product-select_item">
+                <input type="radio" data-variant="red" data-quantity="50" name="select_item" id="p-p-red">
+                <label class="red-label" for="p-p-red">
+                  <img class="select-img" src="./images/select/red-item.png" alt="select-image">
+                </label>
+              </div>
+              <div class="product-select_item">
+                <input type="radio" data-variant="blue" data-quantity="50" name="select_item" id="p-p-blue">
+                <label class="blue-label" for="p-p-blue">
+                  <img class="select-img" src="./images/select/blue-item.png" alt="select-image">
+                </label>
+              </div>
+              <div class="product-select_item">
+                <input type="radio" data-variant="green" data-quantity="50" name="select_item" id="p-p-green">
+                <label class="green-label" for="p-p-green">
+                  <img class="select-img" src="./images/select/green-item.png" alt="select-image">
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="product-variant">
+            <div class="product-text">
+              <p class="product-name">TRIVEX® PERFORMANCE</p>
+              <p class="product-price">$75</p>
+            </div>
+            <div class="product-select">
+              <div class="product-select_item">
+                <input type="radio" data-variant="red" data-quantity="75" name="select_item" id="t-p-red">
+                <label class="red-label" for="t-p-red">
+                  <img class="select-img" src="./images/select/red-item.png" alt="select-image">
+                </label>
+              </div>
+              <div class="product-select_item">
+                <input type="radio" data-variant="blue" data-quantity="75" name="select_item" id="t-p-blue">
+                <label class="blue-label" for="t-p-blue">
+                  <img class="select-img" src="./images/select/blue-item.png" alt="select-image">
+                </label>
+              </div>
+              <div class="product-select_item">
+                <input type="radio" data-variant="green" data-quantity="75" name="select_item" id="t-p-green">
+                <label class="green-label" for="t-p-green">
+                  <img class="select-img" src="./images/select/green-item.png" alt="select-image">
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="buttons-container">
+            <div class="btn-box-add">
+              <button type="submit" class="add-btn" id="add-btn"><b>ADD TO CART</b></button>
+            </div>
+            <div class="btn-box-presc">
+              <button type="button" class="presc-btn"><b>BUILD YOUR PRESCRIPTION</b></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

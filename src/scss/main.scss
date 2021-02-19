@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+$primaryColor: #000;
+$accentColor: #33F0A9;
+$border: 2px solid #E3E2E2;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap');
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.product-tab {
+  display: flex;
+  padding: 85px 60px;
+}
+
+@import './left-side';
+@import './right-side';
+@import './change-img';
