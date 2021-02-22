@@ -6,12 +6,17 @@
     font-size: 46px;
     line-height: 1.2;
     margin: 0 0 35px;
+
+    @media (max-width: 1250px) {
+        font-size: 34px;
+    }
 }
 
 .product-text {
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     &::after {
         content: '';
@@ -30,23 +35,39 @@
     padding-bottom: 5px;   
     font-size: 24px;
     line-height: 1.5;
+
+    @media (max-width: 1250px) {
+        font-size: 18px;
+    }
+}
+
+.product-name {
+    margin-right: 10px;
 }
 
 .product-price {
     position: relative;
+    display: flex;
+    max-height: 40px;
 }
 
 .sale-price {
+    margin-left: 7px;
     color: #D01917;
 
     &::before {
         content: '';
         position: absolute;
+        left: 0;
         top: 45%;
         display: block;
         height: 2px;
         width: 68px;
         background-color: #D01917;
+
+        @media (max-width: 1250px) {
+            width: 51px;
+        }
     }
 }
 
@@ -54,12 +75,20 @@
     display: flex;
     padding: 18px 0 0 0;
     margin-bottom: 50px;
+
+    @media (max-width: 1050px) {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 950px) {
+        margin-bottom: 20px;
+    }
 }
 
 .product-select_item {
 
     &:not(:last-child) {
-            margin-right: 10px;
+        margin-right: 10px;
     }
 
     input {
@@ -81,6 +110,11 @@
         width: 53px;
         height: 44px;
         cursor: pointer;
+
+        @media (max-width: 950px) {
+            width: 3vw;
+            height: 3vh;
+        }
     }
 
     label:hover {
@@ -98,6 +132,10 @@
     font-size: 16px;
     opacity: 0;
     transition: opacity 150ms linear;
+
+    @media (max-width: 1250px) {
+        font-size: 12px;
+    }
 }
 
 .red-label {
@@ -152,6 +190,10 @@
     outline: none;
     transform: translate(-10px, -10px);
     transition: transform 150ms linear;
+
+    @media (max-width: 1250px) {
+        font-size: 12px;
+    }
 
     &:hover {
         transform: translate(0, 0);
